@@ -72,9 +72,13 @@ public class FirstFragment extends Fragment {
         });
 
         binding.Arriba.setOnClickListener(view1 -> {
+            vidas1=vidas2;
+            veri1=veri2;
             binding.texto1.setText(vidas2+"/"+veri2);
         });
         binding.abajo.setOnClickListener(view1 -> {
+            vidas2=vidas1;
+            veri2=veri1;
             binding.texto2.setText(vidas1+"/"+veri1);
         });
 
