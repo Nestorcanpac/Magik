@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="698dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="361dp" />
+
+        <Button
+            android:id="@+id/Arriba"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Arriba"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/abajo"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:text="Abajo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <Button
+            android:id="@+id/RestaVida1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/RestaVeri1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/SumaVida1"
+            android:layout_width="wrap_content"
+            android:layout_height="263dp"
+            android:text="Suma"
+            app:layout_constraintBottom_toTopOf="@+id/Arriba"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RestaVida1" />
+
+        <Button
+            android:id="@+id/SumaVeneno1"
+            android:layout_width="wrap_content"
+            android:layout_height="263dp"
+            android:text="Suma"
+            app:layout_constraintBottom_toTopOf="@+id/Arriba"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RestaVeri1" />
+
+        <Button
+            android:id="@+id/RestaVida2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/RestaVeri2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/SumaVida2"
+            android:layout_width="wrap_content"
+            android:layout_height="239dp"
+            android:text="Suma"
+            app:layout_constraintBottom_toTopOf="@+id/RestaVida2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abajo"
+            app:layout_constraintVertical_bias="0.512" />
+
+        <Button
+            android:id="@+id/SumaVeri2"
+            android:layout_width="wrap_content"
+            android:layout_height="239dp"
+            android:text="Suma"
+            app:layout_constraintBottom_toTopOf="@+id/RestaVeri2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/abajo" />
+
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="109dp"
+            android:layout_height="69dp"
+            android:text="25/0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintBottom_toTopOf="@+id/Arriba"
+            app:layout_constraintEnd_toStartOf="@+id/SumaVeneno1"
+            app:layout_constraintStart_toEndOf="@+id/SumaVida1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="107dp"
+            android:layout_height="66dp"
+            android:text="25/0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toStartOf="@+id/SumaVeri2"
+            app:layout_constraintStart_toEndOf="@+id/SumaVida2"
+            app:layout_constraintTop_toBottomOf="@+id/abajo" />
+
+        <Button
+            android:id="@+id/Actualizador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualiza"
+            app:layout_constraintEnd_toStartOf="@+id/RestaVeri1"
+            app:layout_constraintStart_toEndOf="@+id/RestaVida1"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
